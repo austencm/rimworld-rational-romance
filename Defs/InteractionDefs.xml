@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<InteractionDef>
+		<defName>TriedHookupWith</defName>
+		<label>hookup attempt</label>
+		<workerClass>RationalRomance.InteractionWorker_NullWorker</workerClass>
+		<symbol>Things/Mote/SpeechSymbols/Romance</symbol>
+		<initiatorXpGainSkill>Social</initiatorXpGainSkill>
+		<initiatorXpGainAmount>10</initiatorXpGainAmount>
+		<logRulesInitiator>
+			<rulesStrings>
+				<li>r_logentry->[INITIATOR_nameDef] flirted with [RECIPIENT_nameDef].</li>
+			</rulesStrings>
+		</logRulesInitiator>
+		<logRulesRecipient>
+			<rulesStrings>
+				<li>r_logentry->[RECIPIENT_nameDef] was flirted with by [INITIATOR_nameDef].</li>
+			</rulesStrings>
+		</logRulesRecipient>
+	</InteractionDef>
+
+	<RulePackDef>
+		<defName>HookupSucceeded</defName>
+		<rulePack>
+			<rulesStrings>
+				<li>sent-> [RECIPIENT_nameDef] agreed to the hookup.</li>
+			</rulesStrings>
+		</rulePack>
+	</RulePackDef>
+
+	<RulePackDef>
+		<defName>HookupFailed</defName>
+		<rulePack>
+			<rulesStrings>
+				<li>sent-> [RECIPIENT_nameDef] did not agree to the hookup.</li>
+			</rulesStrings>
+		</rulePack>
+	</RulePackDef>
+  
+</Defs>
