@@ -12,7 +12,7 @@
 	<JoyGiverDef>
 		<defName>GoOnDate</defName>
 		<giverClass>RationalRomance.JoyGiver_Date</giverClass>
-		<baseChance>99.0</baseChance> <!-- 2.8 -->
+		<baseChance>2.8</baseChance>
 		<jobDef>ProposeDate</jobDef>
 		<joyKind>Social</joyKind>
 	</JoyGiverDef>
